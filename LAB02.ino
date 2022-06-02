@@ -190,20 +190,4 @@ void loop()
 */
 
 
-void sendData(String comando, const int timeout)
-{
-  long int time = millis(); // medir el tiempo actual para verificar timeout
-  esp8266.print(comando); // enviar el comando al ESP8266
-  while ( (time + timeout) > millis()) //mientras no haya timeout
-  {
-    while (esp8266.available()) //mientras haya datos por leer
-    {
-      // Leer los datos disponibles
-      char c = esp8266.read(); // leer el siguiente caracter
-      Serial.print(c);
-    }
-    
-  }
-  return;
-  
-}
+
