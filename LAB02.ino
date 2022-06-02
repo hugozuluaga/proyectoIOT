@@ -140,22 +140,7 @@ void loop()
     }
   }
 
-  if (encendido == 1) {
-    //TEMP
-     
-    humedad = dht.readHumidity();
-    temp = dht.readTemperature();
-    Serial.print("Temperatura: ");
-    Serial.print(temp);
-    Serial.print("ºC Humedad: ");
-    Serial.print(humedad);
-    Serial.println("%");
-    lectura = analogRead(A0);
- Serial.print("DATA, TIME,");
- Serial.print(temp);
- Serial.print(",");
-        Serial.println(humedad);
-    delay(1000);
+ 
     
 
     // Comprobamos si ha habido algún error en la lectura
