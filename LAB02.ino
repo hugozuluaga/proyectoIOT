@@ -6,8 +6,7 @@
 #include <Servo.h>
 
  
-// arduino Rx (pin 2) ---- ESP8266 Tx
-// arduino Tx (pin 3) ---- ESP8266 Rx
+// arduino Rxvxcv
 SoftwareSerial esp8266(3, 2);
 int sensor = 4;
 const char* server = "api.thingspeak.com";
